@@ -1,9 +1,5 @@
 pymongo
 
-torch
-torchvision
-torchaudio
-
-easyocr
-
 matplotlib
+paddleocr
+opencv-python
