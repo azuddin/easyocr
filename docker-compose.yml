@@ -1,0 +1,20 @@
+version: "3.1"
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    volumes:
+      - "./data/mongo/data:/data/db"
+    ports:
+      - 27017:27017
+  python:
+    container_name: python
+    # restart: always
+    build: .
+    volumes:
+      - "./data/python:/data/python"
+      - "./data/uploaded_files:/data/uploaded_files"
+    depends_on:
+      - mongo

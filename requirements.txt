@@ -1,0 +1,9 @@
+pymongo
+
+torch
+torchvision
+torchaudio
+
+easyocr
+
+matplotlib
